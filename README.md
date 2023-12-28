@@ -1,8 +1,8 @@
 # Console-Finances
 
-You have been given a dataset composed of arrays with two fields: Date and Profit/Losses.
+We have been given a dataset composed of arrays with two fields: Date and Profit/Losses.
 
-Your task is to write JavaScript code that analyzes the records to calculate each of the following:
+Our task is to write JavaScript code that analyzes the records to calculate each of the following:
 
 - The total number of months included in the dataset.
 
@@ -11,7 +11,7 @@ Your task is to write JavaScript code that analyzes the records to calculate eac
 - The average of the changes in Profit/Losses over the entire period.
 
 
-You will need to track what the total change in profits is from month to month and then find the average.
+I will need to track what the total change in profits is from month to month and then find the average.
 
 - (Total/(Number of months - 1))
 
