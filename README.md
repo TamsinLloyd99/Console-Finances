@@ -40,3 +40,4 @@ When you open your code in the browser your resulting analysis should look simil
 
 <img width="957" alt="image" src="https://github.com/TamsinLloyd99/Console-Finances/assets/152029548/2ef2dc1f-dca1-4b8b-a363-7459740913f1">
 
+<img width="960" alt="image" src="https://github.com/TamsinLloyd99/Console-Finances/assets/152029548/ba646bfc-ab13-4d14-989d-5402e86e6bf1">
