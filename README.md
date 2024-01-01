@@ -6,10 +6,6 @@ In this challenge, you'll be using the concepts you've learned to complete the r
 
 ## Instructions
 
-1. Create a new GitHub repo called `Console-Finances`. Then, clone it to your computer.
-
-2. Copy the starter files in your local git repository.
-
 You have been given a dataset composed of arrays with two fields, Date and Profit/Losses.
 
 Your task is to write JavaScript code that analyzes the records to calculate each of the following:
@@ -41,3 +37,5 @@ When you open your code in the browser your resulting analysis should look simil
 <img width="957" alt="image" src="https://github.com/TamsinLloyd99/Console-Finances/assets/152029548/2ef2dc1f-dca1-4b8b-a363-7459740913f1">
 
 <img width="960" alt="image" src="https://github.com/TamsinLloyd99/Console-Finances/assets/152029548/ba646bfc-ab13-4d14-989d-5402e86e6bf1">
+
+Deployed link: https://tamsinlloyd99.github.io/Console-Finances/starter/ 
