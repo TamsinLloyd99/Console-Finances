@@ -1,4 +1,4 @@
-var finances = [
+let finances = [
   ['Jan-2010', 867884],
   ['Feb-2010', 984655],
   ['Mar-2010', 322013],
@@ -86,3 +86,60 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+//create a variable for the sum and initialise it
+  let total = 0;
+  //create a for loop to count
+  for (let i = 0; i<finances.length; i++){
+      //[i][1] targets second nested array
+  total += finances[i][1];
+  }
+
+// let average = total / finances.length;
+function calculateAverageChange(finances) {
+  let totalChange = 0;
+
+  for (let i = 1; i < finances.length; i++) {
+    const current = finances[i][1];
+    const previous = finances[i-1][1];
+    //[i-1][1] targets the second nested array^
+    const change = current - previous;
+    totalChange += change;
+  }
+
+  let averageChange = totalChange / (finances.length - 1);
+  return averageChange;
+}
+
+function findGreatestIncrease (finances){
+  let greatestIncrease = 0;
+  let greatestIncreaseDate = "";
+
+for (let i = 1; i < finances.length; i++) {
+  const current = finances[i][1];
+  const previous = finances [i-1][1];
+  const change = current-previous;
+
+if (isNaN(change)){
+    continue;
+  }
+//check is change is a number. If yes, continue
+
+if(change>greatestIncrease){
+  greatestIncrease = change;
+  greatestIncreaseDate = finances[i][1];
+}
+}
+return { date: greatestIncreaseDate, amount: greatestIncrease };
+}
+const greatestIncrease = findGreatestIncrease(finances);
+
+
+
+
+console.log("Financial Analysis");
+console.log("Total Months: " + finances.length); 
+console.log("Total: " + total);
+console.log("Average Change: " + calculateAverageChange(finances));
+console.log("Greatest Increase in Profits/Losses: " + findGreatestIncrease(finances));
+console.log("Greatest Decrease in Profits/Losses: ");
