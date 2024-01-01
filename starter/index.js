@@ -95,7 +95,7 @@ let finances = [
   total += finances[i][1];
   }
 
-// let average = total / finances.length;
+//Average//
 function calculateAverageChange(finances) {
   let totalChange = 0;
 
@@ -110,36 +110,47 @@ function calculateAverageChange(finances) {
   let averageChange = totalChange / (finances.length - 1);
   return averageChange;
 }
+//
 
-function findGreatestIncrease (finances){
-  let greatestIncrease = 0;
-  let greatestIncreaseDate = "";
+//Greatest Increase//
+let greatestIncrease = finances[1][1] - finances[0][1];
+let greatestIncreaseDate = finances[1][0];
 
 for (let i = 1; i < finances.length; i++) {
-  const current = finances[i][1];
-  const previous = finances [i-1][1];
-  const change = current-previous;
+  let increase = finances[i][1] - finances[i-1][1];
 
-if (isNaN(change)){
-    continue;
+if(increase > greatestIncrease){
+  greatestIncrease = increase;
+  greatestIncreaseDate = finances[i][0];
+}
+}
+//
+
+
+//Greatest decrease//
+
+// Initialize variables to store the greatest decrease and its corresponding date
+let greatestDecrease = finances[1][1] - finances[0][1];
+let greatestDecreaseDate = finances[1][0];
+
+// Iterate through the finances starting from the second record
+for (let i = 1; i < finances.length; i++) {
+  // Calculate the difference between the current record and the previous record
+  let decrease = finances[i][1] - finances[i-1][1];
+  
+  // If the decrease is greater than the current greatest decrease, update the variables
+  if (decrease < greatestDecrease) {
+    greatestDecrease = decrease;
+    greatestDecreaseDate = finances[i][0];
   }
-//check is change is a number. If yes, continue
-
-if(change>greatestIncrease){
-  greatestIncrease = change;
-  greatestIncreaseDate = finances[i][1];
 }
-}
-return { date: greatestIncreaseDate, amount: greatestIncrease };
-}
-const greatestIncrease = findGreatestIncrease(finances);
+//
 
 
-
-
+//Console logs
 console.log("Financial Analysis");
 console.log("Total Months: " + finances.length); 
 console.log("Total: " + total);
 console.log("Average Change: " + calculateAverageChange(finances));
-console.log("Greatest Increase in Profits/Losses: " + findGreatestIncrease(finances));
-console.log("Greatest Decrease in Profits/Losses: ");
+console.log("Greatest Increase in Profits/Losses: " + greatestIncreaseDate + " ($" + greatestIncrease + ")");
+console.log("Greatest Decrease in Profits/Losses: " + greatestDecreaseDate + " ($" + greatestDecrease + ")");
