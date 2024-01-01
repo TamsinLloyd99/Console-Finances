@@ -38,60 +38,6 @@ When you open your code in the browser your resulting analysis should look simil
   Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
   ```
 
-Your final code should print the analysis to the console.
+<img width="957" alt="image" src="https://github.com/TamsinLloyd99/Console-Finances/assets/152029548/2ef2dc1f-dca1-4b8b-a363-7459740913f1">
 
-**Hints:**
-
-* You will need to do some research on your own for this project!
-
-* Remember, in order to combine strings and variables in the console you will need to use **concatenation**.
-
-* How do you only print to the nearest 100th in JavaScript?
-
-## Grading Requirements
-
-This homework is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Repository Quality: 23%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for variable naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-### Application Quality: 5%
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
-
----
-
-## Copyright
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+<img width="960" alt="image" src="https://github.com/TamsinLloyd99/Console-Finances/assets/152029548/ba646bfc-ab13-4d14-989d-5402e86e6bf1">
